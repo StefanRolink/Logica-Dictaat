@@ -1,0 +1,367 @@
+\chapter{2 vergelijkingen met 2 onbekenden}
+\label{chap:vergelijkingen}
+
+In hoofdstuk 6 hebben we ons beziggehouden met vraagstukken van de vorm: 
+\[2x+8=14\] In de wiskunde noemen we dit een (lineaire) vergelijking met 1 onbekende ($x$). Het oplossen van deze vergelijking levert ons een waarde van $x$ op. Hier: $x=3$
+
+Daarnaast kennen we ook 2 vergelijkingen met 2 onbekenden. Een voorbeeld daarvan is: 
+\[
+\begin{cases}
+       2x+3y&=10 \\
+       5x-2y&=7
+\end{cases}
+\]
+
+Dit noemen we ook wel een stelsel vergelijkingen. Hierin zijn $x$ en $y$ de onbekenden. Het oplossen van dit stelsel levert ons waarden van $x$ en $y$ op. Een ander voorbeeld van zo'n stelsel vergelijkingen is:
+
+\[
+\begin{cases}
+       x^2+y&=4 \\
+       3x+4y^2&=1
+\end{cases}
+\]
+In dit hoofdstuk beperken we ons tot stelsels met 2 lineaire vergelijkingen met 2 onbekenden $x$ en $y$. Dit betekent dat de beide onbekenden $x$ en $y$ de exponent 1 hebben. Het eerste stelsel is dus een voorbeeld van zo'n stelsel.
+
+Voor het oplossen van dit stelsel kennen we 2 oplossingsmethoden:
+\begin{enumerate}
+    \item[-] Substitutiemethode
+    \item[-] Eliminatiemethode
+\end{enumerate}
+
+\section{Substitutiemethode}
+Bij deze methode lossen we $x$ (of $y$) op uit een van de vergelijkingen uit het stelsel, en vullen dan deze oplossing $x$ (of $y$) in de andere vergelijking in. Dit invullen heet substitueren, waaraan de methode de naam ontleent.
+
+Voorbeelden:
+\begin{enumerate}
+    \item Los op: 
+        $\begin{cases}
+            x+2y&=3\\
+            2x+3y&=1
+        \end{cases}$ \\
+        Oplossing: We pakken de eerste vergelijking en herschrijven deze zodat we krijgen: 
+        \begin{align*}    
+            x+2y&=3 \\
+            x&=3-2y
+        \end{align*}
+        Deze vullen we in (= substitueren) in de tweede vergelijking, dit geeft: 
+        \[2(3-2y)+3y=1\]
+        Dit is nu een lineaire vergelijking met 1 onbekende ($y$). Verder oplossen levert dan:	
+        \begin{align*}
+            2(3-2y)+3y&=1 \\
+            6-4y+3y&=1 \\
+            -y&=1-6 \\
+            y&=5
+        \end{align*}
+        Invullen van $y=5$ levert de oplossing voor $x$: 
+        \begin{align*}
+            x&=3-2\cdot 5 \\
+            &=3-10 \\
+            &=-7
+        \end{align*}
+        De oplossing van het stelsel is dus: 
+        $\begin{cases}
+            x&=-7 \\
+            y&=5
+        \end{cases}$
+    \item 	Los op:
+    $\begin{cases}
+    3x+y&=7 \\
+    4x-2y&=6 
+    \end{cases}$
+\end{enumerate}
+	
+\newpage
+\section{Eliminatiemethode}
+Bij deze methode proberen we $y$ (of $x$) uit het stelsel te verdrijven door beide vergelijkingen met een (andere) constante te vermenigvuldigen zodanig dat de $y$ (of $x$) na optellen of aftrekken van de vergelijkingen verdwijnt (wordt ge\"elimineerd).
+
+Voorbeelden:
+\begin{enumerate}
+    \item Los op:
+    $\begin{cases}
+       x+2y &=3 \\
+       2x+3y &=1 
+    \end{cases}$ \\
+    Oplossing: We vermenigvuldigen de bovenste vergelijking met het getal 3, en de onderste vergelijking met het getal 2.
+    \[
+    \begin{cases}
+    x+2y&=3 \quad \cdot 3 \\
+    2x+3y&=1 \quad \cdot 2     
+    \end{cases} \Rightarrow
+    \begin{cases}
+        3x+6y&=9 \\
+        4x+6y&=2
+    \end{cases}
+    \]
+    Als we nu de vergelijkingen van elkaar aftrekken, wordt de variabele $y$ ge\"elimineerd:
+    \begin{align*}
+    3x + 6y &= 9 \\
+    4x + 6y &= 2 \quad -\\
+    \hline 
+    -x + 0y &= 7
+    \end{align*}
+
+    Hierdoor vinden we voor $x$:
+    \begin{align*}
+        -x+0y&=7 \\
+        x&=-7
+    \end{align*}
+
+    De gevonden $x$ kunnen we nu invullen in een van de vergelijkingen om $y$ te vinden:
+    \begin{align*}
+        x+2y&=3  \\
+        -7+2y&=3 \\
+        2y&=10   \\
+        y&=5        
+    \end{align*}
+    De oplossing van het stelsel is dus: 
+    $\begin{cases}
+        x&=-7 \\
+        y&=5
+    \end{cases}$ \\
+
+    \item 	Los op:
+    $\begin{cases}
+      3x+y&=7 \\
+      4x-2y&=6
+    \end{cases}$
+\end{enumerate}
+
+\newpage
+\section{Oplosbare, strijdige en afhankelijke stelsels}
+In paragrafen 7.1 en 7.2 hebben we gezien dat we het onderstaande stelsel kunnen oplossen. \\
+\[
+\begin{cases}
+    x+2y&=3\\
+    2x+3y&=1
+\end{cases}
+\]
+
+Uit hoofdstuk \ref{chap:functies} weten we ook dat we de vergelijkingen kunnen herschrijven in de vorm $y=ax+b$:
+\[
+\begin{cases}
+    x+2y&=3 \\
+    2x+3y&=1
+\end{cases} \quad \Rightarrow \quad 
+\begin{cases}
+    2y&=-x+3\\
+    3y&=-2x+1
+\end{cases} \quad \Rightarrow \quad
+\begin{cases}
+    y&=-0.5x+1.5 \\
+    y&=-\frac{2}{3} x+\frac{1}{3}
+\end{cases}
+\]
+De grafieken zijn dus rechte lijnen:
+\begin{align*}
+    l_1: y&=-\frac{1}{2}x+1.5 \\
+    l_2: y&=-\frac{2}{3} x+\frac{1}{3}
+\end{align*}
+
+In onderstaand figuur zijn deze lijnen $l_1$ en $l_2$ getekend:
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=1]
+    \begin{axis}[
+            mystyle,
+            ytick={-1,...,10},
+            xtick={-12,...,1},
+            ymin=-1, ymax=10,
+            xmin=-12, xmax=1,
+        ]
+        \addplot[domain=-15:15,color=nhl_blue] {-.5*x+1.5};
+        \addplot[domain=-15:15,color=red] {-(2/3)*x+(1/3)};
+        \addplot[mark=*,color=nhl_blue] coordinates {(-7,5)};  
+        \addlegendentry{\(f(x)=-\frac{1}{2}x+1.5\)}
+        \addlegendentry{\(f(x)=-\frac{2}{3}x+\frac{1}{3}\)}
+        \end{axis}
+    \end{tikzpicture}
+    \caption{Een oplosbaar stelsel}
+    \label{fig:oplosbaar}
+\end{figure}
+
+
+De lijnen $l_1$(blauw) en $l_2$(rood) snijden elkaar in het punt $S$. De co\"ordinaten van dat snijpunt zijn:
+
+\[
+S(-7,5)\Rightarrow
+\begin{cases}
+    x_S&=-7 \\
+    y_S&=5
+\end{cases}
+\]
+
+Dit komt overeen met de oplossing van het stelsel vergelijkingen: $\begin{cases}
+    x&=-7 \\
+    y&=5
+\end{cases}$
+
+Conclusie:
+Het oplossen van een stelsel van 2 lineaire vergelijkingen met 2 onbekenden komt overeen met het zoeken van het snijpunt van 2 rechte lijnen. Als dit snijpunt er is noemen we het stelsel \emph{oplosbaar}.
+
+Voorbeelden:
+\begin{enumerate}
+    \item Los op: 
+    $\begin{cases}
+        x+y&=3\\
+        4x+4y&=5     
+    \end{cases}$ \\
+    
+    Oplossing: We passen de substitutiemethode toe: \\
+    We lossen eerst $x$ op uit de eerste vergelijking: 
+    \begin{align*}
+        x+y&=3 \\
+        x&=3-y
+    \end{align*}
+    Deze substitueren we in de tweede vergelijking: $4(3-y)+4y=5$ \\
+    Als we dit oplossen vinden we:
+    \begin{align*}
+        4(3-y)+4y&=5 \\
+        12-4y+4y&=5 \\
+        12&=5 \ ???
+    \end{align*}
+    Aangezien 12 geen 5 is, betekent dit het stelsel geen oplossing heeft. 
+    We noemen dit een \emph{strijdig stelsel}.
+    
+    Als we de vergelijkingen schrijven in de vorm: $y=ax+b$, dan zien we wat er aan de hand is met dit stelsel:
+    \begin{align*}
+    x+y&=3 \\
+    y& =-x+3 
+    \end{align*}
+    \begin{align*}
+    4x+4y&=5 \\
+    4y&=-4x+5 \\
+    y&=-x+1.25
+    \end{align*}
+    De grafieken zijn rechte lijnen:
+    \begin{align*}
+    l_1:y&=-x+3 \\
+    l_2:y&=-x+1.25
+    \end{align*}
+    In onderstaande figuur zijn deze lijnen $l_1$(blauw) en $l_2$(rood) getekend:
+
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=1]
+        \begin{axis}[
+                mystyle,
+                ytick={-1,...,10},
+                xtick={-12,...,1},
+                ymin=-1, ymax=10,
+                xmin=-12, xmax=1,
+            ]
+            
+            % Add the two points:
+            \addplot[domain=-15:15,color=nhl_blue] {-1*x+3};
+            \addplot[domain=-15:15,color=red] {-1*x+1.25};
+            \addlegendentry{\(f(x)=-x+3\)}
+            \addlegendentry{\(f(x)=-x+1.25\)}
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Een strijdig stelsel}
+        \label{fig:strijdig}
+    \end{figure}
+
+    De lijnen $l_1$ en $l_2$ zijn evenwijdig aan elkaar. Ze snijden elkaar dus niet, zodat er geen snijpunt is. Daarom heeft het stelsel ook geen oplossing.\\
+
+    \item Los op: 
+    $\begin{cases}
+        6x-4y&=14 \\
+        9x-6y&=21
+    \end{cases}$ \\
+    
+    Oplossing: We passen de eliminatiemethode toe: \\
+
+    We gaan $x$ uit het stelsel elimineren. Daarvoor gaan we de eerste vergelijking vermenigvuldigen met het getal 9, en de andere vergelijking met het getal 6:
+    \[
+    \begin{cases}
+        6x-4y&=14 \quad \cdot 9\\
+        9x-6y&=21 \quad \cdot 6
+    \end{cases} \Rightarrow
+    \begin{cases}
+        54x-36y&=126 \\
+        54x-36y&=126
+    \end{cases}
+    \]
+    Als we nu de vergelijkingen van elkaar aftrekken wordt de variabele x ge\"elimineerd:
+    \begin{align*}
+    54x-36y&=126 \\
+    54x-36y&=126 \quad -\\
+    \hline 
+    0x-0y&=0
+    \end{align*}
+    Evenals het vorige voorbeeld vinden we ook nu geen oplossing van het stelsel.
+    Alleen is hier wat anders aan de hand, wat we kunnen herkennen aan de kloppende oplossing die we vinden, in tegenstelling tot de niet kloppende $5=12$ van het vorige voorbeeld. \\
+    
+    We zien dat in dit geval beide vergelijkingen van de vorm $54x-36y=126$ zijn. Beide vergelijkingen zijn dus precies aan elkaar gelijk. In dat geval noemen we het stelsel afhankelijk. \\
+
+    Als we ook in dit voorbeeld de vergelijkingen herschrijven in de vorm $y=ax+b$, dan krijgen we de rechte lijnen:
+    \begin{align*}
+      l_1:y&=1.5x-3.5\\
+      l_2:y&=1.5x-3.5  
+    \end{align*}
+    De lijnen $l_2$ en $l_2$ vallen dus samen, in feite is er sprake van slechts \'e\'en rechte lijn:
+    \begin{figure}[H]
+        \centering
+        \begin{tikzpicture}[scale=1]
+            \begin{axis}[
+                    mystyle,
+                    ytick={-1,...,10},
+                    xtick={-12,...,1},
+                    ymin=-1, ymax=10,
+                    xmin=-12, xmax=1,
+                ]
+                % Add the two points:
+                \addplot[domain=-15:15,color=nhl_blue] {-1.5*x-3.5};
+                \addplot[domain=-15:15,color=red] {-1.5*x-3.5};
+                \addlegendentry{\(f(x)=-1.5x-3.5\)}
+                \addlegendentry{\(f(x)=-1.5x-3.5\)}
+                \end{axis}
+            \end{tikzpicture}
+        \caption{Een afhankelijk stelsel}
+        \label{fig:afhankelijk}
+    \end{figure}
+\end{enumerate}
+
+\newpage
+\section{Huiswerkopdrachten}
+In dit hoofdstuk heb je geleerd hoe je stelsels van lineaire vergelijkingen kunt oplossen met de substitutiemethode en de eliminatiemethode. In de volgende opgaven pas je beide methoden toe. Kies per stelsel een geschikte methode en werk je tussenstappen netjes uit. Als een stelsel geen oplossing heeft, geef dan aan waarom.
+
+\subsection*{Opgave 1: Los de volgende stelsels op met de substitutiemethode}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{m{12em}@{\hspace{4em}}l}
+\text{a.}\hspace{0.5em} $\begin{cases} 4x + y = 17 \\ 2x + 3y = 11 \end{cases}$ 
+    & \text{d.}\hspace{0.5em} $\begin{cases} 2p - 7q = 5 \\ p - 4q = -1 \end{cases}$ \\
+\text{b.}\hspace{0.5em} $\begin{cases} 2x - y = 0 \\ 5x - 4y = 6 \end{cases}$ 
+    & \text{e.}\hspace{0.5em} $\begin{cases} 2a + 3b = 17 \\ a - 4b = 3 \end{cases}$ \\
+\text{c.}\hspace{0.5em} $\begin{cases} 3x - y = 11 \\ -x + 3y = 7 \end{cases}$ 
+    & \text{f.}\hspace{0.5em} $\begin{cases} x - 3y = 7 \\ -5x + 2y = 4 \end{cases}$ \\
+\end{tabular}
+
+\subsection*{Opgave 2: Los de volgende stelsels op met de eliminatiemethode}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{m{12em}@{\hspace{4em}}l}
+\text{a.}\hspace{0.5em} $\begin{cases} x + y = 4 \\ x - y = 6 \end{cases}$ 
+    & \text{d.}\hspace{0.5em} $\begin{cases} 6x + 5y = 1 \\ 7x + 6y = 2 \end{cases}$ \\
+\text{b.}\hspace{0.5em} $\begin{cases} 5a + 2b = 3 \\ 2a - 4b = 6 \end{cases}$ 
+    & \text{e.}\hspace{0.5em} $\begin{cases} 3x + 2y = 18 \\ 5x + 4y = 33 \end{cases}$ \\
+\text{c.}\hspace{0.5em} $\begin{cases} 2p + 3q = 4 \\ 3p - 2q = 6 \end{cases}$ 
+    & \text{f.}\hspace{0.5em} $\begin{cases} 7k - 5p = 1 \\ 4k - 7p = 13 \end{cases}$ \\
+\end{tabular}
+
+\subsection*{Opgave 3: Los de volgende stelsels vergelijkingen op}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{m{12em}@{\hspace{4em}}l}
+\text{a.}\hspace{0.5em} $\begin{cases} 2x + 5y = 9 \\ 3x - 4y = 2 \end{cases}$ 
+    & \text{g.}\hspace{0.5em} $\begin{cases} x + 3y = 0 \\ 4x - 2y = 14 \end{cases}$ \\
+\text{b.}\hspace{0.5em} $\begin{cases} 2x + 3y = 2 \\ 3x + 4y = 2 \end{cases}$ 
+    & \text{h.}\hspace{0.5em} $\begin{cases} 2x - 3y = 1 \\ 3x - 4y = 0 \end{cases}$ \\
+\text{c.}\hspace{0.5em} $\begin{cases} 3a + 5b = 8 \\ -a + 6b = 5 \end{cases}$ 
+    & \text{i.}\hspace{0.5em} $\begin{cases} 5x - 3y = 7 \\ 8x - 5y = 2 \end{cases}$ \\
+\text{d.}\hspace{0.5em} $\begin{cases} 2x - 3y = 5 \\ 3x - 4{,}5y = 4 \end{cases}$ 
+    & \text{j.}\hspace{0.5em} $\begin{cases} 9b - 15c = 12 \\ 6b - 10c = 8 \end{cases}$ \\
+\text{e.}\hspace{0.5em} $\begin{cases} 2k - 3m = 1 \\ 4k - 6m = -1 \end{cases}$ 
+    & \text{k.}\hspace{0.5em} $\begin{cases} 4x + 8y = 4 \\ 2x + 4y = 2 \end{cases}$ \\
+\text{f.}\hspace{0.5em} $\begin{cases} 2n + 9t = 5 \\ -n - 4t = 2 \end{cases}$ 
+    & \text{l.}\hspace{0.5em} $\begin{cases} x + 3y = 5 \\ 3x - y = -5 \end{cases}$ \\
+\end{tabular}

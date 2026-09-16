@@ -1,0 +1,235 @@
+\chapter{Machten}
+\label{chap:machten}
+% De wiskundige uitdrukking $a^k$ noemen we een macht van $a$.
+% In deze uitdrukking wordt $a$ het grondtal en $k$ de exponent genoemd.
+% Als $k=4$, dan wordt $a^4$ de vierde macht van $a$ genoemd.
+
+De wiskundige uitdrukking $a^k$ noemen we een macht van $a$.
+In deze uitdrukking wordt $a$ het \emph{grondtal} en $k$ de 
+\emph{exponent} genoemd.
+Als $k=4$, dan wordt $a^4$ de vierde macht van $a$ genoemd.
+
+Een macht is een compacte schrijfwijze voor herhaald vermenigvuldigen: 
+$a^4$ betekent niets anders dan $a \cdot a \cdot a \cdot a$. 
+
+Zo is bijvoorbeeld $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$. Zonder 
+machtnotatie zou je voor zo'n getal een lange rij vermenigvuldigingen 
+moeten uitschrijven. Machten zijn dus vooral een kwestie van effici\"ent noteren.
+
+Sommige machten hebben een eigen naam: $a^2$ heet het \emph{kwadraat} 
+van $a$ (denk aan de oppervlakte van een vierkant met zijde $a$) en 
+$a^3$ de \emph{derde macht} of het \emph{kubus}getal van $a$ (het 
+volume van een kubus met ribbe $a$).
+
+Machten komen overal in de praktijk voor:
+\begin{itemize}
+    \item bij groei en verval, zoals de verdubbelingstijd van 
+    een bacteriekweek of de halveringstijd van radioactief materiaal
+    \item in de wetenschappelijke notatie, waarmee je extreem 
+    grote of kleine getallen compact schrijft, zoals de 
+    lichtsnelheid $c \approx 3.0 \times 10^8$ meter per seconde;
+    \item bij \emph{eenheden}, zoals vierkante meters ($\text{m}^2$) 
+    en kubieke meters ($\text{m}^3$).
+\end{itemize}
+
+In dit hoofdstuk leer je rekenen met machten: machten vermenigvuldigen 
+en delen, machten van machten, en wat er gebeurt met een exponent die 
+nul of negatief is. 
+
+Let op een veelgemaakte fout: $2^3 = 2 \cdot 2 \cdot 2 = 8$ en dus 
+\emph{niet} $2+2+2 = 2 \cdot 3 = 6$.
+
+\section{Machten met een positieve, gehele exponent}
+
+Definitie: Voor ieder getal $a$ en elk positief geheel getal $k$ geldt: 
+\[
+    a^k=a\cdot a\cdot a\cdot \dotsc \cdot a
+\]
+
+Het getal $a$ wordt hierbij $k$ keer met zichzelf vermenigvuldigd.
+
+Voorbeelden:
+\begin{align*}
+2^5    &= 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32 \\
+\left(\tfrac{1}{3}\right)^3 &= \tfrac{1}{3} \cdot \tfrac{1}{3} \cdot \tfrac{1}{3} = \tfrac{1}{27} \\
+y^5    &= y \cdot y \cdot y \cdot y \cdot y \\
+(-2)^4 &= (-2) \cdot (-2) \cdot (-2) \cdot (-2) = 16 \\
+-2^4   &= -(2 \cdot 2 \cdot 2 \cdot 2) = -16
+\end{align*}
+
+\regel{Regel 1}{a^n\cdot a^m=a^{n+m}}
+
+Controle van deze algemene regel: 
+\[
+    a^2\cdot a^3=a\cdot a\cdot a\cdot a\cdot a=a^5
+\]
+
+Voorbeelden:
+\begin{align*}
+a^5 \cdot a^2   &= a^7 \\
+x^4 \cdot x^5   &= \\
+2^6 \cdot 2^8   &= 2^{14} \\
+10^6 \cdot 10^3 &=
+\end{align*}
+
+\regel{Regel 2}{\frac{a^m}{a^n} =a^{m-n}}
+
+Controle van deze algemene regel: 
+\[
+    \frac{a^5}{a^2} =\frac{a\cdot a\cdot a\cdot a\cdot a}{a\cdot a}=a^3
+\]
+
+Voorbeelden:
+\begin{align*}
+\frac{a^{10}}{a^7}    &= a^{10-7} = a^3 \\
+\frac{x^5}{x^2}       &= \\
+\frac{p^{2n}}{p^n}    &= p^{2n-n} = p^n \\
+\frac{y^{5n}}{y^{2n}} &=
+\end{align*}
+
+\regel{Regel 3}{(a^m)^n=a^{m\cdot n}}
+
+Controle van deze algemene regel: 
+\[
+    (a^2 )^3=a^2\cdot a^2\cdot a^2=a\cdot a\cdot a\cdot a\cdot a\cdot a=a^6
+\]
+
+Voorbeelden:
+\begin{align*}
+(a^2)^4  &= a^{2 \cdot 4} = a^8 \\
+(y^3)^5  &= \\
+(3^4)^3  &= 3^{4 \cdot 3} = 3^{12} = 531441 \\
+(10^4)^2 &=
+\end{align*}
+
+\regel{Regel 4}{(a\cdot b)^m=a^m\cdot b^m}
+
+Controle van deze algemene regel: 
+\[
+    (ab)^3=ab\cdot ab\cdot ab=a\cdot a\cdot a\cdot b\cdot b\cdot b=a^3\cdot b^3
+\]
+
+Voorbeelden:
+\begin{align*}
+(2b)^3   &= 2^3 \cdot b^3 = 8b^3 \\
+(4x)^2   &= \\
+(3a^4)^2 &= 3^2 \cdot (a^4)^2 = 9a^8 \\
+(2y^2)^3 &= \\
+(a^2 \cdot b^4)^3 &= (a^2)^3 \cdot (b^4)^3 = a^6 \cdot b^{12} \\
+(x^3 \cdot y^2)^4 &=
+\end{align*}
+
+\regel{Regel 5}{\left(\frac{a}{b}\right)^m=\frac{a^m}{b^m}}
+
+Controle van deze algemene regel:
+\[
+\left(\frac{a}{b}\right)^3 = \frac{a}{b} \cdot \frac{a}{b} \cdot \frac{a}{b} 
+                           = \frac{a \cdot a \cdot a}{b \cdot b \cdot b} 
+                           = \frac{a^3}{b^3}
+\]
+
+Voorbeelden:
+\begin{align*}
+\left(\frac{2}{b}\right)^4       &= \frac{2^4}{b^4} = \frac{16}{b^4} \\
+\left(\frac{1}{y}\right)^3       &= \\
+\left(\frac{a}{b^2}\right)^3     &= \frac{a^3}{(b^2)^3} = \frac{a^3}{b^6} \\
+\left(\frac{x^2}{y^3}\right)^5   &= \\
+\left(\frac{5a}{b^4}\right)^2    &= \frac{(5a)^2}{(b^4)^2} = \frac{25a^2}{b^8} \\
+\left(\frac{2x^2}{3y^6}\right)^3 &=
+\end{align*}
+
+\regel{Regel 6}{a^0=1\text{, waarbij }a\neq 0}
+Controle van deze algemene regel: 
+\[
+    \frac{a^5}{a^5} =1 \text{, omdat: } \frac{a^5}{a^5} =a^{5-5}=a^0 \text{, dus } a^0=1
+\]
+
+Voorbeelden:
+\begin{align*}
+10^0        &= 1 \\
+(2x^3)^0    &= 1 \\
+(3x - 5y)^0 &= 1
+\end{align*}
+
+\section{Machten met een negatieve, gehele exponent}
+\regel{Regel 7a}{a^{-m}=\frac{1}{a^m} }
+
+Controle van deze algemene regel:
+\[
+    a^{-5}=a^{0-5}=\frac{a^0}{a^5} =\frac{1}{a^5}
+\]
+Na verwisseling van termen kunnen we regel 7A ook schrijven als:
+
+\newpage
+\regel{Regel 7b}{a^m=\frac{1}{a^{-m}}} 
+
+Voorbeelden:
+\begin{align*}
+2^{-3}  &= \frac{1}{2^3} = \frac{1}{8} \\[1em]
+10^{-2} &= \\[1em]
+a^{-4}  &= \frac{1}{a^4} \\[1em]
+x^{-6}  &= \\[1em]
+\frac{1}{a^{-8}}        &= a^8 \\[1em]
+\frac{1}{y^{-1}}        &= \\[1em]
+\frac{a^{-2}}{b^{-6}}   &= \frac{b^6}{a^2} \\[1em]
+\frac{y^{-3}}{x^{-8}}   &= \\[1em]
+4a^{-2}                 &= 4 \cdot a^{-2} = \frac{4}{a^2} \\[1em]
+8x^{-3}                 &= \\[1em]
+\frac{3p^{-2}}{4q^{-3}} &= \frac{3q^3}{4p^2} \\[1em]
+\frac{2a^{-5}}{4b^{-3}} &=
+\end{align*}
+
+Opmerking: Regels 1 t/m 5 gelden ook voor machten met negatieve exponenten!
+
+Voorbeelden:
+\begin{align*}
+a^5 \cdot a^{-2}    &= a^{5-2} = a^3                     & &\text{(Regel 1)} \\[1em]
+p^8 \cdot p^{-5}    &=                                   & &\text{(Regel 1)} \\[1em]
+x^{-5} \cdot x^3    &= x^{-5+3} = x^{-2} = \frac{1}{x^2} & &\text{(Regel 1, daarna Regel 7a)} \\[1em]
+y^{-7} \cdot y^4    &=                                   & &\text{(Regel 1)} \\[1em]
+\frac{a^5}{a^{-2}}  &= a^{5-(-2)} = a^7                  & &\text{(Regel 2)} \\[1em]
+\frac{x^{-6}}{x^2}  &=                                   & &\text{(Regel 2)} \\[1em]
+(a^{-2})^3          &= a^{-6} = \frac{1}{a^6}            & &\text{(Regel 3, daarna Regel 7a)} \\[1em]
+(p^{-4})^2          &=                                   & &\text{(Regel 3)}
+\end{align*}
+
+\newpage
+\section{Huiswerkopdrachten}
+In deze opgaven pas je de rekenregels met machten toe die je in dit hoofdstuk hebt geleerd. Werk elke opgave netjes uit en zorg dat je eindantwoord geen negatieve exponenten meer bevat.
+
+\subsection*{Opgave 1: Schrijf zo eenvoudig mogelijk, zonder negatieve exponenten.}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{m{15em}@{\hspace{4em}}l}
+\text{a.}\hspace{0.5em} $x^4 \cdot x^3$          & \text{n.}\hspace{0.5em} $\dfrac{p^2}{p^{-4}}$       \\
+\text{b.}\hspace{0.5em} $y^5 \cdot y^3$          & \text{o.}\hspace{0.5em} $\dfrac{b^{-6}}{b^{-2}}$     \\
+\text{c.}\hspace{0.5em} $5a^2 \cdot a^6$         & \text{p.}\hspace{0.5em} $\dfrac{12}{x^{-4}}$         \\
+\text{d.}\hspace{0.5em} $8x^4 \cdot x^2$         & \text{q.}\hspace{0.5em} $\dfrac{8y^5}{y^{-2}}$       \\
+\text{e.}\hspace{0.5em} $y^6 \cdot y^{-2}$       & \text{r.}\hspace{0.5em} $(x^4 \cdot y^2)^0$         \\
+\text{f.}\hspace{0.5em} $m^{-8} \cdot m^2$       & \text{s.}\hspace{0.5em} $\dfrac{x^6}{x^{-2}}$        \\
+\text{g.}\hspace{0.5em} $p^4 \cdot p^{-7}$       & \text{t.}\hspace{0.5em} $\dfrac{x^4}{x^6}$          \\
+\text{h.}\hspace{0.5em} $a^{-2} \cdot a^3$       & \text{u.}\hspace{0.5em} $\dfrac{a^3}{a^5}$          \\
+\text{i.}\hspace{0.5em} $x^5 \cdot x^{-6}$       & \text{v.}\hspace{0.5em} $\dfrac{3a^4}{a^{-5}}$      \\
+\text{j.}\hspace{0.5em} $p^4 \cdot p^{-4}$       & \text{w.}\hspace{0.5em} $\dfrac{p^{n+2}}{p^{n-2}}$   \\
+\text{k.}\hspace{0.5em} $\dfrac{y^6}{y^2}$       & \text{x.}\hspace{0.5em} $\dfrac{y^{-7}}{y^{-2}}$     \\
+\text{l.}\hspace{0.5em} $\dfrac{x^{10}}{x^6}$    & \text{y.}\hspace{0.5em} $\dfrac{y^{2p-4}}{y^{2p+4}}$  \\
+\text{m.}\hspace{0.5em} $\dfrac{4}{x^{-3}}$      & \text{z.}\hspace{0.5em} $\left(\dfrac{3a^4}{b^6}\right)^0$ 
+\end{tabular}
+
+\newpage
+\subsection*{Opgave 2: Schrijf zo eenvoudig mogelijk, zonder negatieve exponenten.}
+\renewcommand{\arraystretch}{2.5}
+\begin{tabular}{m{15em}@{\hspace{4em}}l}
+\text{a.}\hspace{0.5em} $(x^2)^3$               & \text{n.}\hspace{0.5em} $(2a^3 \cdot c^5)^3$        \\
+\text{b.}\hspace{0.5em} $(a^5)^2$               & \text{o.}\hspace{0.5em} $\left(\dfrac{4x}{y^4}\right)^2$  \\
+\text{c.}\hspace{0.5em} $(2y^3)^3$              & \text{p.}\hspace{0.5em} $\left(\dfrac{2y}{x^2}\right)^4$  \\
+\text{d.}\hspace{0.5em} $(4x^4)^2$              & \text{q.}\hspace{0.5em} $\dfrac{x^4}{y^{-2}}$       \\
+\text{e.}\hspace{0.5em} $(a^{-2})^{-5}$         & \text{r.}\hspace{0.5em} $\dfrac{a^6}{b^{-4}}$       \\
+\text{f.}\hspace{0.5em} $(p^2)^{-4}$            & \text{s.}\hspace{0.5em} $a^{-2} \cdot b^5$         \\
+\text{g.}\hspace{0.5em} $(x^{-3})^5$            & \text{t.}\hspace{0.5em} $x^{-7} \cdot y^2$         \\
+\text{h.}\hspace{0.5em} $(y^{-3})^{-2}$         & \text{u.}\hspace{0.5em} $\dfrac{1}{4x^{-2}}$        \\
+\text{i.}\hspace{0.5em} $(2x^3 \cdot y^2)^4$   & \text{v.}\hspace{0.5em} $\dfrac{1}{3p^{-4}}$        \\
+\text{j.}\hspace{0.5em} $(2x^2 \cdot y^4)^3$   & \text{w.}\hspace{0.5em} $\dfrac{4a^{-3}}{b^{-6}}$   \\
+\text{k.}\hspace{0.5em} $\left(\dfrac{3}{a^2}\right)^3$  & \text{x.}\hspace{0.5em} $\dfrac{9y^{-2}}{5x^{-7}}$  \\
+\text{l.}\hspace{0.5em} $\left(\dfrac{5}{m^4}\right)^2$  & \text{y.}\hspace{0.5em} $\left(\dfrac{a^5}{b^3}\right)^2$  \\
+\text{m.}\hspace{0.5em} $(a^2 \cdot b \cdot c^4)^2$ & \text{z.}\hspace{0.5em} $\left(\dfrac{x^3}{y^{-2}}\right)^4$ 
+\end{tabular}
