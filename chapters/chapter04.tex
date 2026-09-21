@@ -6,6 +6,48 @@ In deze uitdrukking wordt $a$ het \emph{grondtal} en $k$ de
 \emph{exponent} genoemd.
 Als $k=4$, dan wordt $a^4$ de vierde macht van $a$ genoemd.
 
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+      >=Stealth,
+      every node/.style={font=\Huge\bfseries},
+      arrowlbl/.style={font=\Large\bfseries, nhl_blue},
+      scale=0.6
+    ]
+    
+      % --- Base expression: 2^3 ---
+      \node[nhl_blue] (base) at (0,0) {$2$};
+      \node[red] (exp) at ($(base.north east)+(0.05,0.15)$) {$\scriptstyle 3$};
+      \node[anchor=west] at ($(base.east)+(0.9,0)$) {$=$};
+    
+      % --- Expanded product: 2 . 2 . 2 ---
+      \node[nhl_blue, anchor=west] (p1) at ($(base.east)+(1.9,0)$) {$2$};
+      \node[nhl_blue, anchor=west] (dot1) at (p1.east) {$\cdot$};
+      \node[nhl_blue, anchor=west] (p2) at (dot1.east) {$2$};
+      \node[nhl_blue, anchor=west] (dot2) at (p2.east) {$\cdot$};
+      \node[nhl_blue, anchor=west] (p3) at (dot2.east) {$2$};
+    
+      % --- Red brace under the product, with "3 stuks" label ---
+      \draw[decorate, decoration={calligraphic brace, amplitude=6pt, raise=35pt}, ultra thick]
+        ($(p1.south west)+(0.05,-0.35)$) -- ($(p3.south east)+(-0.05,-0.35)$);
+      \node[red, font=\large\bfseries] at ($(p2.north)+(0,1.1)$) {3 stuks};
+    
+      % --- "exponent" label, top-left, with curved red arrow to the exponent ---
+      \node[arrowlbl, red, anchor=east] (explbl) at (-2.6,1.6) {exponent};
+      \draw[->, red, thick]
+        (explbl.east) .. controls +(1.0,0.1) and +(-0.6,0.5) .. (exp.north west);
+    
+      % --- "grondtal" label, bottom-left, with curved nhl_blue arrow to the base ---
+      \node[arrowlbl, nhl_blue, anchor=east] (baselbl) at (-2.6,-1.6) {grondtal};
+      \draw[->, nhl_blue, thick]
+        (baselbl.east) .. controls +(1.0,-0.1) and +(-0.6,-0.5) .. (base.south west);
+    
+    \end{tikzpicture}
+    \label{fig:placeholder}
+\end{figure}
+
+
+
 Een macht is een compacte schrijfwijze voor herhaald vermenigvuldigen: 
 $a^4$ betekent niets anders dan $a \cdot a \cdot a \cdot a$. 
 
