@@ -6,9 +6,11 @@ pizza, drie kwartier wachttijd, of twee derde van de studenten waren op tijd voo
 \[
     \frac{1}{3}, \quad \frac{8}{15}, \quad \frac{2}{p}, \quad \frac{x}{y}
 \]
-Formeel beschreven is een breuk een getal met de volgende structuur: 
-$\frac{T}{N}$. Hierbij noemen we $T$ de \emph{teller} van de breuk, 
-terwijl we $N$ de \emph{noemer} van de breuk noemen.
+Een breuk $\frac{T}{N}$ beschrijft een deling: $T$ is de \emph{teller}
+(wat je deelt) en $N$ is de \emph{noemer} (waardoor je deelt). Zo betekent
+$\frac{3}{4}$ dat je drie van vier gelijke delen neemt. De noemer moet
+altijd ongelijk aan nul zijn, ook wanneer er een letter in staat. Voor
+$\frac{2}{p}$ geldt dus $p\neq 0$.
 
 In principe is een breuk een deling: je deelt de teller $T$ door de 
 noemer $N$. Op deze wijze kun je de decimale waarde van een breuk 
@@ -17,11 +19,14 @@ berekenen. Bijvoorbeeld:
     \frac{8}{15}\approx 0{,}5333
 \]
 
-Goed om te benoemen is dat er \'e\'en belangrijke beperking is: \emph{de noemer mag nooit nul zijn}. Delen door nul is niet gedefinieerd, dus bij elke breuk (en elke formule met een deling!) moet je je afvragen of de noemer wel ongelijk aan nul is.
+Bij het vereenvoudigen met letters blijven alle beperkingen van de
+\emph{oorspronkelijke} breuk gelden. Bijvoorbeeld: $\frac{x}{x}=1$ geldt
+alleen voor $x\neq 0$.
 
 Waarom is het rekenen met breuken zo belangrijk? Veel studenten proberen 
 breuken te omzeilen door alles met de rekenmachine in decimalen om te 
-zetten. Maar vaak is een breuk beter, een breuk als $\frac{2}{3}$ is namelijk \emph{exact}, terwijl de decimale notatie $0.6667$ afgerond (en dus onnauwkeuriger) is.
+zetten. Maar vaak is een breuk beter: $\frac{2}{3}$ is \emph{exact},
+terwijl $0{,}6667$ een afgeronde benadering is.
 
 In dit hoofdstuk behandelen we een aantal eigenschappen van breuken: 
 het vereenvoudigen en gelijknamig maken van breuken, en het optellen, 
@@ -30,7 +35,10 @@ aftrekken, vermenigvuldigen en delen van breuken. Ook dit gaat weer aan de hand 
 \newpage
 \regel{Regel 1}{\frac{A}{B}=\frac{p\cdot A}{p\cdot B} \quad \text{waarbij } p\neq 0}
 
-In woorden: de waarde van een breuk verandert niet, als we de teller en de noemer met hetzelfde getal vermenigvuldigen.
+In woorden: de waarde van een breuk verandert niet als we de teller en
+de noemer met hetzelfde, niet-nul getal vermenigvuldigen. We vermenigvuldigen
+dan immers met $\frac{p}{p}=1$. Dit heet \emph{uitbreiden} en gebruiken we
+later om breuken gelijknamig te maken.
 
 Voorbeelden:
 \begin{align*}
@@ -40,7 +48,10 @@ Voorbeelden:
 
 \regel{Regel 2}{\frac{A}{B} = \frac{\frac{A}{q}}{\frac{B}{q}} \quad \text{waarbij } q \neq 0}
 
-In woorden: de waarde van een breuk verandert niet, als we de teller en de noemer door hetzelfde getal delen.
+Dit is de omgekeerde stap: deel teller en noemer door dezelfde niet-nul
+factor. Dit heet \emph{vereenvoudigen}. Zoek daarvoor een factor die in
+de hele teller en de hele noemer voorkomt. Losse termen mag je niet
+wegstrepen: $\frac{x+2}{x}$ is bijvoorbeeld niet gelijk aan $2$.
 
 Voorbeelden:
 \begin{align*}
@@ -57,114 +68,152 @@ Voorbeelden:
 -\frac{3}{a}  &= \frac{-3}{a}
 \end{align*}
 
-\section{Het vereenvoudigen van een breuken met een breuk in de breuk}
-Er zijn regels waarmee je een breuk met een breuk in de teller en/of noemer kunt vereenvoudigen.
+\section{Breuken in teller of noemer}
+Een breukstreep betekent delen. Bij een breuk in de teller deel je de
+teller nogmaals door de buitenste noemer. Bij een breuk in de noemer
+deel je juist door die hele breuk. Let steeds op dat geen enkele noemer
+nul wordt en dat de breuk waardoor je deelt zelf niet nul is.
 
 \regel{Regel 4}{\frac{\frac{A}{B}}{C}=\frac{A}{B\cdot C}}
+
+Hier geldt $\left(\frac{A}{B}\right):C=\frac{A}{B}\cdot\frac{1}{C}$,
+met $B,C\neq 0$.
 
 Voorbeelden:
 \begin{align*}
 \frac{\frac{2}{5}}{3}    &= \frac{2}{5 \cdot 3} = \frac{2}{15} \\[1em]
-\frac{\frac{3}{2}}{7}    &= \\[1em]
+\frac{\frac{3}{2}}{7}    &= \frac{3}{2\cdot 7}=\frac{3}{14} \\[1em]
 \frac{\frac{3}{x}}{y}    &= \frac{3}{x \cdot y} = \frac{3}{xy} \\[1em]
-\frac{\frac{5a}{3b}}{4c} &= \\[1em]
+\frac{\frac{5a}{3b}}{4c} &= \frac{5a}{3b\cdot 4c}=\frac{5a}{12bc} \\[1em]
 \frac{\frac{2}{x}}{3x}   &= \frac{2}{x \cdot 3x} = \frac{2}{3x^2} \\[1em]
-\frac{\frac{y}{5}}{y}    &=
+\frac{\frac{y}{5}}{y}    &= \frac{y}{5y}=\frac{1}{5}
 \end{align*}
 
 \regel{Regel 5}{\frac{A}{\frac{B}{C}}=\frac{A\cdot C}{B}}
 
+Delen door $\frac{B}{C}$ is vermenigvuldigen met het omgekeerde
+$\frac{C}{B}$. Hiervoor moeten $B$ en $C$ allebei ongelijk aan nul zijn.
+
 Voorbeelden:
 \begin{align*}
 \frac{2}{\frac{5}{3}}    &= \frac{2 \cdot 3}{5} = \frac{6}{5} \\[1em]
-\frac{3}{\frac{2}{7}}    &= \\[1em]
+\frac{3}{\frac{2}{7}}    &= 3\cdot\frac{7}{2}=\frac{21}{2} \\[1em]
 \frac{3}{\frac{x}{2y}}   &= \frac{3 \cdot 2y}{x} = \frac{6y}{x} \\[1em]
-\frac{5a}{\frac{3b}{4c}} &= \\[1em]
+\frac{5a}{\frac{3b}{4c}} &= 5a\cdot\frac{4c}{3b}=\frac{20ac}{3b} \\[1em]
 \frac{2}{\frac{x}{3x}}   &= \frac{2 \cdot 3x}{x} = \frac{6x}{x} = 6 \\[1em]
-\frac{y}{\frac{5}{15y}}  &=
+\frac{y}{\frac{5}{15y}}  &= y\cdot\frac{15y}{5}=3y^2
 \end{align*}
 
 \newpage
 \regel{Regel 6}{\frac{\frac{A}{B}}{\frac{C}{D}}=\frac{A\cdot D}{B\cdot C}}
 
+Combineer de vorige regels: vermenigvuldig de bovenste breuk met het
+omgekeerde van de onderste. De factoren $B$, $C$ en $D$ mogen niet nul
+zijn.
+
 Voorbeelden:
 \begin{align*}
 \frac{\frac{4}{5}}{\frac{3}{7}}      &= \frac{4 \cdot 7}{5 \cdot 3} = \frac{28}{15} \\[1em]
-\frac{\frac{7}{3}}{\frac{2}{5}}      &= \\[1em]
+\frac{\frac{7}{3}}{\frac{2}{5}}      &= \frac{7}{3}\cdot\frac{5}{2}=\frac{35}{6} \\[1em]
 \frac{\frac{2a}{3m}}{\frac{6b}{5k}}  &= \frac{2a \cdot 5k}{3m \cdot 6b} = \frac{10ak}{18mb} = \frac{5ak}{9mb} \\[1em]
-\frac{\frac{8c}{5r}}{\frac{4d}{10s}} &= \\[1em]
+\frac{\frac{8c}{5r}}{\frac{4d}{10s}} &= \frac{8c}{5r}\cdot\frac{10s}{4d}=\frac{4cs}{rd} \\[1em]
 \frac{\frac{x}{y}}{\frac{y}{x}}      &= \frac{x^2}{y^2} \\[1em]
-\frac{\frac{d}{s}}{\frac{d^2}{s^2}}  &=
+\frac{\frac{d}{s}}{\frac{d^2}{s^2}}  &= \frac{d}{s}\cdot\frac{s^2}{d^2}=\frac{s}{d}
 \end{align*}
 
 \section{Het vermenigvuldigen van breuken}
 Wanneer breuken met elkaar worden vermenigvuldigd, dan kunnen we direct de tellers met elkaar vermenigvuldigen en ook de noemers met elkaar vermenigvuldigen (zie onderstaande regel 7). We hoeven dus niet eerst de breuken gelijknamig te maken zoals bij het optellen van breuken (zie paragraaf 5.3).
+
+Vereenvoudig zo mogelijk gemeenschappelijke \emph{factoren} voordat je
+grote producten uitrekent. Bijvoorbeeld
+$\frac{2}{3}\cdot\frac{9}{5}=\frac{2\cdot 9}{3\cdot 5}
+=\frac{2\cdot 3}{5}=\frac{6}{5}$. De factor $3$ komt zowel boven als
+onder de breukstreep voor.
 
 \regel{Regel 7}{\frac{A}{B}\cdot \frac{C}{D}=\frac{A\cdot C}{B\cdot D}}
 
 Voorbeelden:
 \begin{align*}
 \frac{3}{5} \cdot \frac{2}{7}     &= \frac{3 \cdot 2}{5 \cdot 7} = \frac{6}{35} \\[1em]
-\frac{4}{9} \cdot \frac{3}{5}     &= \\[1em]
+\frac{4}{9} \cdot \frac{3}{5}     &= \frac{4\cdot 3}{9\cdot 5}=\frac{4}{15} \\[1em]
 \frac{3}{x} \cdot \frac{2}{y}     &= \frac{6}{xy} \\[1em]
-\frac{a}{2} \cdot \frac{3}{b}     &= \\[1em]
+\frac{a}{2} \cdot \frac{3}{b}     &= \frac{a\cdot 3}{2\cdot b}=\frac{3a}{2b} \\[1em]
 x \cdot \frac{y}{3}               &= \frac{x}{1} \cdot \frac{y}{3} = \frac{xy}{3} \\[1em]
-c \cdot \frac{a}{b}               &= \\[1em]
+c \cdot \frac{a}{b}               &= \frac{c}{1}\cdot\frac{a}{b}=\frac{ac}{b} \\[1em]
 \frac{2+x}{3-y} \cdot \frac{5}{8} &= \frac{(2+x) \cdot 5}{(3-y) \cdot 8} = \frac{10+5x}{24-8y} \\[1em]
-\frac{a+2}{b-1} \cdot \frac{b}{a} &= \\[1em]
+\frac{a+2}{b-1} \cdot \frac{b}{a} &= \frac{b(a+2)}{a(b-1)} \\[1em]
 \frac{x-1}{x-2} \cdot \frac{x-2}{x-3} &= \frac{(x-1)(x-2)}{(x-2)(x-3)} = \frac{x-1}{x-3} \\[1em]
-\frac{y+4}{y-1} \cdot \frac{y+3}{y+4} &= \\[1em]
+\frac{y+4}{y-1} \cdot \frac{y+3}{y+4} &= \frac{(y+4)(y+3)}{(y-1)(y+4)}=\frac{y+3}{y-1} \\[1em]
 \frac{2}{a} \cdot \frac{b^2}{4} \cdot \frac{8}{c}    &= \frac{16b^2}{4ac} = \frac{4b^2}{ac} \\[1em]
-\frac{x}{2y} \cdot \frac{10}{p} \cdot \frac{y^2}{20} &=
+\frac{x}{2y} \cdot \frac{10}{p} \cdot \frac{y^2}{20} &= \frac{10xy^2}{40yp}=\frac{xy}{4p}
 \end{align*}
 
 \section{Het optellen van breuken}
 Wanneer breuken bij elkaar opgeteld worden, moeten ze eerst \emph{gelijknamig} gemaakt worden, d.w.z. we moeten ervoor zorgen dat ze gelijke noemers krijgen. Uiteraard hoeft dat alleen maar, als ze nog niet gelijknamig zijn. Als we de gelijknamigheid bereikt hebben, kunnen we de breuken bij elkaar optellen door de tellers van deze gelijknamige breuken bij elkaar op te tellen (zie regel 8).
+
+Bij aftrekken werkt dit op dezelfde manier, maar trek je de tellers af.
+Houd de noemer gelijk: $\frac{2}{7}+\frac{3}{7}=\frac{5}{7}$, niet
+$\frac{5}{14}$. Bij verschillende noemers zoek je eerst een
+gemeenschappelijke noemer. Zo worden $\frac{1}{3}$ en $\frac{2}{5}$
+respectievelijk $\frac{5}{15}$ en $\frac{6}{15}$, en dus is hun som
+$\frac{11}{15}$. Bij letteruitdrukkingen blijven haakjes nodig:
+\[
+\frac{3}{p+2}+\frac{5}{p}
+=\frac{3p+5(p+2)}{p(p+2)}
+=\frac{8p+10}{p(p+2)},\qquad p\neq 0,-2.
+\]
 
 \regel{Regel 8}{\frac{A}{N}+\frac{B}{N}=\frac{A+B}{N}}
 
 Voorbeelden:
 \begin{align*}
 \frac{3}{7} + \frac{5}{7}       &= \frac{8}{7} \\[1em]
-\frac{5}{12} + \frac{7}{12}     &= \\[1em]
+\frac{5}{12} + \frac{7}{12}     &= \frac{5+7}{12}=1 \\[1em]
 \frac{4}{x} + \frac{5}{x}       &= \frac{4+5}{x} = \frac{9}{x} \\[1em]
-\frac{6}{p} + \frac{2}{p}       &= \\[1em]
+\frac{6}{p} + \frac{2}{p}       &= \frac{6+2}{p}=\frac{8}{p} \\[1em]
 \frac{4}{5+a} + \frac{2}{5+a}   &= \frac{4+2}{5+a} = \frac{6}{5+a} \\[1em]
-\frac{5}{x-2} + \frac{6}{x-2}   &= \\[1em]
+\frac{5}{x-2} + \frac{6}{x-2}   &= \frac{5+6}{x-2}=\frac{11}{x-2} \\[1em]
 \frac{3}{7} + \frac{1}{2}       &= \frac{6}{14} + \frac{7}{14} = \frac{13}{14} \\[1em]
-\frac{1}{3} + \frac{2}{5}       &= \\[1em]
+\frac{1}{3} + \frac{2}{5}       &= \frac{5}{15}+\frac{6}{15}=\frac{11}{15} \\[1em]
 \frac{8}{x} - \frac{5}{y}       &= \frac{8y}{xy} - \frac{5x}{xy} = \frac{8y-5x}{xy} \\[1em]
-\frac{4}{a} + \frac{2}{b}       &= \\[1em]
+\frac{4}{a} + \frac{2}{b}       &= \frac{4b}{ab}+\frac{2a}{ab}=\frac{4b+2a}{ab} \\[1em]
 \frac{3}{p+2} + \frac{5}{p}     &= \frac{3p}{p(p+2)} + \frac{5(p+2)}{p(p+2)} = \frac{3p}{p(p+2)} + \frac{5p+10}{p(p+2)} = \frac{3p+5p+10}{p(p+2)} = \frac{8p+10}{p(p+2)} \\[1em]
-\frac{5}{x} - \frac{3}{x+4}     &= \\[1em]
-\frac{3a}{a-1} + \frac{4}{a-3}  &= \\[1em]
+\frac{5}{x} - \frac{3}{x+4}     &= \frac{5(x+4)-3x}{x(x+4)}=\frac{2x+20}{x(x+4)} \\[1em]
+\frac{3a}{a-1} + \frac{4}{a-3}  &= \frac{3a(a-3)+4(a-1)}{(a-1)(a-3)}=\frac{3a^2-5a-4}{(a-1)(a-3)} \\[1em]
 \frac{1}{2} + \frac{5}{6}       &= \frac{3}{6} + \frac{5}{6} = \frac{8}{6} = \frac{4}{3} \\[1em]
-\frac{3}{10} + \frac{2}{15}     &= \\[1em]
+\frac{3}{10} + \frac{2}{15}     &= \frac{9}{30}+\frac{4}{30}=\frac{13}{30} \\[1em]
 \frac{x}{y} - \frac{x}{3y}      &= \frac{3x}{3y} - \frac{x}{3y} = \frac{3x-x}{3y} = \frac{2x}{3y} \\[1em]
-\frac{2}{x} - \frac{1}{x^2}     &= \\[1em]
+\frac{2}{x} - \frac{1}{x^2}     &= \frac{2x}{x^2}-\frac{1}{x^2}=\frac{2x-1}{x^2} \\[1em]
 \frac{1}{2} + \frac{2}{3} - \frac{3}{5} &= \frac{15}{30} + \frac{20}{30} - \frac{18}{30} = \frac{17}{30} \\[1em]
-\frac{5}{a} - \frac{4}{b} + \frac{3}{c} &=
+\frac{5}{a} - \frac{4}{b} + \frac{3}{c} &= \frac{5bc-4ac+3ab}{abc}
 \end{align*}
 
 \section{Een breuk vereenvoudigen}
 Soms zijn er breuken waarbij in de teller of noemer een breuk voorkomt als onderdeel van die teller of noemer. Het doel bij het vereenvoudigen hiervan is om de breuk, die in de teller of de noemer staat, weg te werken.
+
+Kies een gemeenschappelijke noemer voor de kleine breuken. Je kunt
+eerst de teller en de noemer afzonderlijk herschrijven, of de hele
+grote breuk met $\frac{q}{q}$ vermenigvuldigen. In dat laatste geval
+moet $q$ ongelijk aan nul zijn en moet je \emph{alle} termen boven en
+onder met $q$ vermenigvuldigen. Controleer daarna opnieuw of de
+oorspronkelijke grote noemer niet nul kan zijn.
 
 Voorbeelden:
 \begin{align*}
 \frac{3+\frac{2}{5}}{4} &\quad \text{Dit vraagstuk gaan we op 2 manieren aanpakken:} \\[0.5em]
 \frac{3+\frac{2}{5}}{4} &= \frac{\frac{15}{5}+\frac{2}{5}}{4} = \frac{\frac{17}{5}}{4} = \frac{17}{5 \cdot 4} = \frac{17}{20} & &\text{Manier 1} \\[1em]
 \frac{3+\frac{2}{5}}{4} &= \frac{3+\frac{2}{5}}{4} \cdot \frac{5}{5} = \frac{(3+\frac{2}{5}) \cdot 5}{4 \cdot 5} = \frac{15+2}{20} = \frac{17}{20} & &\text{Manier 2} \\[1em]
-\frac{5-\frac{2}{3}}{5} &= \\[1em]
+\frac{5-\frac{2}{3}}{5} &= \frac{\frac{15}{3}-\frac{2}{3}}{5}=\frac{13}{15} \\[1em]
 \frac{1+\frac{2}{x}}{y} &= \frac{1+\frac{2}{x}}{y} \cdot \frac{x}{x} = \frac{(1+\frac{2}{x}) \cdot x}{y \cdot x} = \frac{x+2}{xy} & &\text{Hier is de 2e manier toegepast} \\[1em]
-\frac{3-\frac{2}{a}}{b} &= \\[1em]
+\frac{3-\frac{2}{a}}{b} &= \frac{\frac{3a-2}{a}}{b}=\frac{3a-2}{ab} \\[1em]
 \frac{4}{1-\frac{1}{a}} &= \frac{4}{\frac{a}{a}-\frac{1}{a}} = \frac{4}{\frac{a-1}{a}} = \frac{4a}{a-1} & &\text{Hier is de 1e manier toegepast} \\[1em]
-\frac{4c}{\frac{1}{d}-2} &= \\[1em]
+\frac{4c}{\frac{1}{d}-2} &= \frac{4c}{\frac{1-2d}{d}}=\frac{4cd}{1-2d} \\[1em]
 \frac{1-\frac{1}{k}}{3+\frac{2}{k}} &= \frac{1-\frac{1}{k}}{3+\frac{2}{k}} \cdot \frac{k}{k} = \frac{(1-\frac{1}{k}) \cdot k}{(3+\frac{2}{k}) \cdot k} = \frac{k-1}{3k+2} & &\text{Hier is de 2e manier toegepast} \\[1em]
-\frac{5+\frac{2}{m}}{1-\frac{1}{m}} &= \\[1em]
+\frac{5+\frac{2}{m}}{1-\frac{1}{m}} &= \frac{\frac{5m+2}{m}}{\frac{m-1}{m}}=\frac{5m+2}{m-1} \\[1em]
 \frac{1+\frac{3}{a}}{2+\frac{5}{b}} &= \frac{\frac{a}{a}+\frac{3}{a}}{\frac{2b}{b}+\frac{5}{b}} = \frac{\frac{a+3}{a}}{\frac{2b+5}{b}} = \frac{(a+3) \cdot b}{a \cdot (2b+5)} = \frac{ab+3b}{2ab+5a} & &\text{Hier is de 1e manier toegepast} \\[1em]
-\frac{\frac{1}{x}-4}{3-\frac{5}{y}} &= \\[1em]
+\frac{\frac{1}{x}-4}{3-\frac{5}{y}} &= \frac{\frac{1-4x}{x}}{\frac{3y-5}{y}}=\frac{y(1-4x)}{x(3y-5)} \\[1em]
 \frac{\frac{2}{a}-\frac{4}{b}}{\frac{3}{b}+\frac{1}{a}} &= \frac{\frac{2b}{ab}-\frac{4a}{ab}}{\frac{3a}{ab}+\frac{b}{ab}} = \frac{\frac{2b-4a}{ab}}{\frac{3a+b}{ab}} = \frac{(2b-4a) \cdot ab}{ab \cdot (3a+b)} = \frac{2b-4a}{3a+b} & &\text{Hier is de 2e manier toegepast} \\[1em]
-\frac{\frac{4}{c}+\frac{5}{d}}{\frac{3}{d}-\frac{1}{c}} &=
+\frac{\frac{4}{c}+\frac{5}{d}}{\frac{3}{d}-\frac{1}{c}} &= \frac{\frac{4d+5c}{cd}}{\frac{3c-d}{cd}}=\frac{4d+5c}{3c-d}
 \end{align*}
 
 \section{Huiswerkopdrachten}
