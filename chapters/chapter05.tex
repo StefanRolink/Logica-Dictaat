@@ -10,6 +10,26 @@ Formeel beschreven is een breuk een getal met de volgende structuur:
 $\frac{T}{N}$. Hierbij noemen we $T$ de \emph{teller} van de breuk, 
 terwijl we $N$ de \emph{noemer} van de breuk noemen.
 
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[
+      >=Stealth,
+      every node/.style={font=\Huge\bfseries},
+      arrowlbl/.style={font=\Large\bfseries, nhl_blue},
+      scale=0.6
+    ]
+      \node[black] (base) at (0,0) {$\frac{\color{red}2}{\color{nhl_blue}3}$};
+
+    
+      \node[arrowlbl, red, anchor=east] (baselbl) at (-3.6,1.6) {teller};
+      \draw[->, red, thick] (baselbl.east) .. controls +(1.0,-0.1) and +(-1.6,0.5) .. ($(exp.north west)+(-7mm,0)$);
+    
+      \node[arrowlbl, nhl_blue, anchor=east] (baselbl) at (-2.6,-1.6) {noemer};
+      \draw[->, nhl_blue, thick] (baselbl.east) .. controls +(1.0,-0.1) and +(-0.6,-0.5) .. (base.south west);
+    \end{tikzpicture}
+    \label{fig:breuk}
+\end{figure}
+
 In principe is een breuk een deling: je deelt de teller $T$ door de 
 noemer $N$. Op deze wijze kun je de decimale waarde van een breuk 
 berekenen. Bijvoorbeeld: 
@@ -27,7 +47,7 @@ In dit hoofdstuk behandelen we een aantal eigenschappen van breuken:
 het vereenvoudigen en gelijknamig maken van breuken, en het optellen, 
 aftrekken, vermenigvuldigen en delen van breuken. Ook dit gaat weer aan de hand van enkele rekenregels. 
 
-\newpage
+% \newpage
 \regel{Regel 1}{\frac{A}{B}=\frac{p\cdot A}{p\cdot B} \quad \text{waarbij } p\neq 0}
 
 In woorden: de waarde van een breuk verandert niet, als we de teller en de noemer met hetzelfde getal vermenigvuldigen.
@@ -173,15 +193,15 @@ In deze opgaven pas je de rekenregels met breuken toe die je in dit hoofdstuk he
 \subsection*{Opgave 1: Vereenvoudig}
 \renewcommand{\arraystretch}{2}
 \begin{tabular}{m{15em}@{\hspace{4em}}l}
-\text{a.}\hspace{0.5em} $\frac{2y}{6x}$        & \text{j.}\hspace{0.5em} $\frac{a}{\frac{b}{ac}}$        \\
-\text{b.}\hspace{0.5em} $\frac{5}{2}$         & \text{k.}\hspace{0.5em} $\frac{\frac{abc}{d}}{\frac{ac}{bd}}$  \\
-\text{c.}\hspace{0.5em} $\frac{4y}{3x}$      & \text{l.}\hspace{0.5em} $\frac{\frac{2x}{y}}{6xy}$      \\
-\text{d.}\hspace{0.5em} $\frac{x}{\frac{3y}{4}}$  & \text{m.}\hspace{0.5em} $\frac{2x}{6xy}$   \\
+\text{a.}\hspace{0.5em} $\frac{\frac{2}{y}}{6x}$        & \text{j.}\hspace{0.5em} $\frac{\frac{a}{b}}{ac}$        \\
+\text{b.}\hspace{0.5em} $\frac{5}{\frac{x}{2}}$         & \text{k.}\hspace{0.5em} $\frac{\frac{abc}{d}}{\frac{ac}{bd}}$  \\
+\text{c.}\hspace{0.5em} $\frac{\frac{4}{y}}{\frac{3}{x}}$      & \text{l.}\hspace{0.5em} $\frac{\frac{2x}{y}}{6xy}$      \\
+\text{d.}\hspace{0.5em} $\frac{\frac{x}{3}}{\frac{y}{4}}$  & \text{m.}\hspace{0.5em} $\frac{2x}{\frac{y}{6xy}}$   \\
 \text{e.}\hspace{0.5em} $\frac{3}{\frac{2}{x}}$  & \text{n.}\hspace{0.5em} $\frac{\frac{bc}{a}}{abc}$  \\
-\text{f.}\hspace{0.5em} $\frac{3xy}{3y}$      & \text{o.}\hspace{0.5em} $\frac{abc}{\frac{bc}{a}}$  \\
-\text{g.}\hspace{0.5em} $\frac{8a}{2ab}$      & \text{p.}\hspace{0.5em} $\frac{6km}{\frac{km}{6}}$  \\
-\text{h.}\hspace{0.5em} $\frac{a}{2ab}$       & \text{q.}\hspace{0.5em} $\frac{\frac{ab}{a}}{\frac{a}{bc}}$  \\
-\text{i.}\hspace{0.5em} $\frac{2x}{\frac{x}{2}}$  & \text{r.}\hspace{0.5em} $\frac{\frac{8xy}{z}}{\frac{8y}{xz}}$  \\
+\text{f.}\hspace{0.5em} $\frac{\frac{3}{xy}}{3y}$      & \text{o.}\hspace{0.5em} $\frac{abc}{\frac{bc}{a}}$  \\
+\text{g.}\hspace{0.5em} $\frac{\frac{8}{a}}{2ab}$      & \text{p.}\hspace{0.5em} $\frac{6km}{\frac{km}{6}}$  \\
+\text{h.}\hspace{0.5em} $\frac{8}{\frac{a}{2ab}}$       & \text{q.}\hspace{0.5em} $\frac{\frac{ab}{a}}{bc}$  \\
+\text{i.}\hspace{0.5em} $\frac{\frac{2}{x}}{\frac{x}{2}}$  & \text{r.}\hspace{0.5em} $\frac{\frac{8xy}{z}}{\frac{8y}{xz}}$  \\
 \end{tabular}
 
 \subsection*{Opgave 2: Herleid tot 1 breuk en vereenvoudig daarna indien mogelijk}
@@ -218,7 +238,7 @@ In deze opgaven pas je de rekenregels met breuken toe die je in dit hoofdstuk he
 \begin{tabular}{m{15em}@{\hspace{4em}}l}
 \text{a.}\hspace{0.5em} $\frac{2+\frac{1}{x}}{x}$              & \text{j.}\hspace{0.5em} $\frac{c-\frac{4}{d}}{c-\frac{1}{d}}$        \\
 \text{b.}\hspace{0.5em} $\frac{5-\frac{2}{3}}{2+\frac{1}{6}}$  & \text{k.}\hspace{0.5em} $\frac{\frac{a}{b}+2}{\frac{a}{b}-2}$          \\
-\text{c.}\hspace{0.5em} $\frac{2}{1+\frac{a}{b}}$              & \text{l.}\hspace{0.5em} $\frac{\frac{y}{x}}{1-\frac{y}{x}}$           \\
+\text{c.}\hspace{0.5em} $\frac{2}{1+\frac{a}{b}}$              & \text{l.}\hspace{0.5em} $\frac{y}{1-\frac{y}{x}}$           \\
 \text{d.}\hspace{0.5em} $\frac{3+\frac{2}{p}}{p}$              & \text{m.}\hspace{0.5em} $\frac{1+\frac{2}{a}}{3+\frac{1}{b}}$         \\
 \text{e.}\hspace{0.5em} $\frac{2+\frac{x}{y}}{1-x}$            & \text{n.}\hspace{0.5em} $\frac{\frac{m}{k}-4}{\frac{k}{m}+4}$         \\
 \text{f.}\hspace{0.5em} $\frac{a+1}{1-\frac{b}{a}}$            & \text{o.}\hspace{0.5em} $\frac{2-\frac{4}{c}}{\frac{1}{b}-1}$         \\
